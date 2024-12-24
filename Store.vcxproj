@@ -19,13 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Date.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="Product.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Date.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
