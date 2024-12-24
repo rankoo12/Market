@@ -31,3 +31,4 @@ void newProduct(Product *product) //todo : add DATE
 
 }
 
+
