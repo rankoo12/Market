@@ -1,0 +1,40 @@
+# Ignore compiled object files and executables
+*.o
+*.obj
+*.so
+*.a
+*.out
+*.exe
+
+# Ignore directories containing compiled files
+/build/
+/bin/
+/obj/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+.vs/
+
+# Ignore temporary files created by editors
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore the output of certain build systems
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+Makefile*
+
+# Ignore debugging files
+*.dSYM/
+
+# Ignore dependency files
+*.d
+
+# Ignore Linux-specific files
+*.swp
