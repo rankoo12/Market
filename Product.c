@@ -22,12 +22,13 @@ void newProduct(Product *product) //todo : add DATE
 	product->productType[strcspn(product->productType, "\n")] = '\0'; // todo : add 4 random numbers (also check if already exist)
 
 	printf("Enter product price: ");
-	scanf("%f", &product->price);
+	scanf_s("%f", &product->price);
 
 	printf("Enter product quantity: ");
-	scanf("%d", &product->quantity);
+	scanf_s("%d", &product->quantity);
 	getchar();
 
 
 }
+
 
