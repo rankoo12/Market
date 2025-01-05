@@ -1,15 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "Date.h"
 #include "Product.h"
 
-// Product structure
-typedef struct {
-	char name[maxSizeProductName];
-	char productType[maxSizeBarCode];
-	float price;
-	int quantity;
-} Product;
+
 
 void newProduct(Product *product) //todo : add DATE
 {
@@ -26,9 +21,17 @@ void newProduct(Product *product) //todo : add DATE
 
 	printf("Enter product quantity: ");
 	scanf_s("%d", &product->quantity);
+
+	printf("Enter a date in format DDMMYYYY: ");
+	int input;
+	scanf_s("%d", &input);
+	printf("Input value: %d\n", input);
+	newDate(&product->date, input);
+	
 	getchar();
 
 
 }
+
 
 
