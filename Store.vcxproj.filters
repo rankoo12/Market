@@ -30,6 +30,9 @@
     <ClCompile Include="NewCart.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Costumer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
@@ -45,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="constants.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Costumer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

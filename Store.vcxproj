@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Costumer.c" />
     <ClCompile Include="Date.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="NewCart.c" />
@@ -27,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constants.h" />
+    <ClInclude Include="Costumer.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="newCart.h" />
     <ClInclude Include="Product.h" />
