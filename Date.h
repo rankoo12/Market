@@ -18,7 +18,7 @@ typedef struct {
 //functions declerations
 int isValidDateInput(int input);
 int newDate(Date* date, int input);
-void splitDate(Date* date, int input);
+void splitDate(Date* date, int input, int inputLength);
 int valiDate(const Date* date);
 
 

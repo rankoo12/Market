@@ -13,17 +13,18 @@ int isValidDateInput(int input)
 		len++;
 		input /= 10;
 	}
-	return len == 8;
+	return len;
 }
 int newDate(Date* date, int input)
 {
-	if (!isValidDateInput(input))
+	int valid = isValidDateInput(input);
+	if (valid !=7 && valid != 8)
 	{
 		printf("Input length is not valid, try again.\n");
 		return 0;
 	}
 
-	splitDate(date, input); // Save the date ! (Congratulations).
+	splitDate(date, input, valid); // Save the date ! (Congratulations).
 	if (!valiDate(date))
 	{
 		printf("You are cool! please enter a valid date!.\n");
@@ -32,16 +33,25 @@ int newDate(Date* date, int input)
 	return 1;
 }
 
-void splitDate(Date* date, int input) 
+void splitDate(Date* date, int input, int inputLength) 
 {
-	// Extract the day (first 2 digits)
-	date->day = input / 1000000; 
+	if (inputLength == 8)
+	{
+		// Extract the day (first 2 digits)
+		date->day = input / 1000000;
 
-	// Extract the month (next 2 digits)
-	date->month = (input / 10000) % 100;  
+		// Extract the month (next 2 digits)
+		date->month = (input / 10000) % 100;
 
-	// Extract the year (last 4 digits)
-	date->year = input % 10000;
+		// Extract the year (last 4 digits)
+		date->year = input % 10000;
+	}
+	if (inputLength == 7)
+	{
+		date->day = input / 1000000;
+		date->month = (input / 10000) % 100;
+		date->year = input % 10000;
+	}
 }
 
 int valiDate(const Date *date)//Did not save any of the numbers below as constants because these number will never ever change and the function will live forever.

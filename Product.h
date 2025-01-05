@@ -1,17 +1,25 @@
 #ifndef PRODUCT_H
 #define PRODUCT_H
+#include "constants.h"
+#include "Date.h"
 
-//constant declerations - input rules
-#define maxSizeProductName 20
-#define maxSizeBarCode 7
+// Product structure
+typedef struct {
+    char name[maxSizeProductName];
+    char barcode[maxSizeBarCode];
+    float price;
+    int quantity;
+    Date date;
+} Product;
+void newProduct(Product* product);
+int validateType(char* input);
+void newBarcode(Product* product, char* type);
+void toUpperCase(char* input);
 
-//constant declerations - type of product
-#define shelf SH
-#define frozen FZ
-#define fridge FR
-#define fruitVegtable FV
 
 //functions declerations
+
+//struct
 
 
 #endif // PRODUCT_H
