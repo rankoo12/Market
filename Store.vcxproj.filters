@@ -24,10 +24,13 @@
     <ClCompile Include="test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Product.c">
-      <Filter>Source Files\Product</Filter>
-    </ClCompile>
     <ClCompile Include="Date.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Cart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Product.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,10 +38,13 @@
     <ClInclude Include="test.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Product.h">
-      <Filter>Source Files\Product</Filter>
-    </ClInclude>
     <ClInclude Include="Date.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Cart.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

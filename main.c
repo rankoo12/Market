@@ -21,7 +21,7 @@ int main() {
 	ShoppingItem item = { p, 2 }; // Adding 2 units of the product
 	Product a;
 	newProduct(&a);
-	ShoppingItem item2 = {a, 2 }; // Adding 2 units of the product
+	ShoppingItem item2 = { a, 2 }; // Adding 2 units of the product
 
 	// Add the item to the cart
 	addItemToCart(&cart, &item);

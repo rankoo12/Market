@@ -11,10 +11,9 @@ typedef struct {
     int quantity;
     Date date;
 } Product;
-
 void newProduct(Product* product);
-void newBarcode(char* type);
 int validateType(char* input);
+void newBarcode(Product* product, char* type);
 void toUpperCase(char* input);
 
 

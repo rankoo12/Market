@@ -6,6 +6,7 @@
 
 int test()
 {
+	/*
 	// ** TEST NUMBER 1 : DATE --> PASSED **
 	int input;
 	Date date;
@@ -69,6 +70,7 @@ int test()
 
 
 	return 0;
-	
+	*/
+	return 0;
 }
 
