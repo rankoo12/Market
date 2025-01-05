@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Product">
-      <UniqueIdentifier>{462dd1d6-0da0-4c17-be13-72954ddf067f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -27,10 +24,10 @@
     <ClCompile Include="Date.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Cart.c">
+    <ClCompile Include="Product.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Product.c">
+    <ClCompile Include="NewCart.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,10 +38,13 @@
     <ClInclude Include="Date.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Cart.h">
+    <ClInclude Include="Product.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Product.h">
+    <ClInclude Include="newCart.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -48,8 +48,8 @@ void splitDate(Date* date, int input, int inputLength)
 	}
 	if (inputLength == 7)
 	{
-		date->day = input / 100000;
-		date->month = (input / 1000) % 100;
+		date->day = input / 1000000;
+		date->month = (input / 10000) % 100;
 		date->year = input % 10000;
 	}
 }
