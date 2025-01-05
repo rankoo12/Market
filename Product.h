@@ -6,13 +6,16 @@
 // Product structure
 typedef struct {
     char name[maxSizeProductName];
-    char productType[maxSizeBarCode];
+    char barcode[maxSizeBarCode];
     float price;
     int quantity;
     Date date;
 } Product;
 
 void newProduct(Product* product);
+void newBarcode(char* type);
+int validateType(char* input);
+void toUpperCase(char* input);
 
 
 //functions declerations

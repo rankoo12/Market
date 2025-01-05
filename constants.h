@@ -5,12 +5,12 @@
 
 //constant declerations - input rules
 #define maxSizeProductName 20
-#define maxSizeBarCode 7
+#define maxSizeBarCode 8
 
 //constant declerations - type of product
-#define shelf SH
-#define frozen FZ
-#define fridge FR
-#define fruitVegtable FV
+#define shelf "SH"
+#define frozen "FZ"
+#define fridge "FR"
+#define fruitVegtable "FV"
 
 #endif

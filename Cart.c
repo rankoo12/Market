@@ -73,7 +73,7 @@ void printCart(const ShoppingCart* cart) {
     for (int i = 0; i < cart->size; i++) {
         const ShoppingItem* item = &cart->items[i];
         printf("Product: %s\n", item->product.name);
-        printf("Type: %s\n", item->product.productType);
+        printf("Type: %s\n", item->product.barcode);
         printf("Price: $%.2f\n", item->product.price);
         printf("Quantity: %d\n", item->quantity);
         printf("Expiration Date: %02d/%02d/%04d\n",
