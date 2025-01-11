@@ -3,7 +3,7 @@
 #include "SuperMarket.h"
 #include "Product.h"
 #include "Costumer.h"
-#include "newCart.h"
+
 void printMenu() {
     printf("\nSuperMarket Menu:\n");
     printf("1. Print supermarket data\n");
@@ -57,52 +57,13 @@ int main() {
 
         case 4: {
             // Start shopping for a customer
-            getchar();  // Clear any leftover input
-
+            getchar();
             char customerId[maxSizeID];
             printf("Enter customer ID: ");
             scanf_s("%s", customerId, maxSizeID);
-
-            // Find the customer by their ID using findCustomerById
-            Costumer* customer = findCustomerById(&market, customerId);
-            if (customer == NULL) {
-                printf("Customer with ID %s not found.\n", customerId);
-                break;  // Exit the case if the customer isn't found
-            }
-
-            // Initialize the cart for the customer
-            initializeCart(&customer->cart);  // Create a new cart for the customer
-            printf("Started shopping for customer %s.\n", customer->name);
-
-            // Now add products to the cart for the customer
-            // We'll enter this part immediately below.
-            // Proceed with adding items to the cart.
-
-            char productName[maxSizeProductName];
-            int quantity;
-
-            printf("Enter product name to add to cart: ");
-            scanf_s("%s", productName, maxSizeProductName);
-
-            // Find the product in the market
-            Product* product = findProductByName(&market, productName);
-            if (product == NULL) {
-                printf("Product not found in the supermarket.\n");
-                break;  // If product not found, exit
-            }
-
-            printf("Enter quantity: ");
-            scanf_s("%d", &quantity);
-
-            // Create a new shopping item and add it to the cart
-            ShoppingItem newItem;
-            newItem.product = *product;  // Copy the product details into the shopping item
-            newItem.quantity = quantity;
-
-            // Add the item to the cart
-            addItemToCart(&customer->cart, &newItem);
-            printf("Added '%s' to cart with quantity %d.\n", product->name, quantity);
-
+            startShopping(&market, customerId);
+            // Assume the startShopping function handles the shopping process
+            // startShopping(&market, customerId);
             break;
         }
 
@@ -113,7 +74,7 @@ int main() {
             printf("Enter customer ID: ");
             scanf_s("%s", customerId, maxSizeID);
             // Assume the printCart function is available to print the shopping cart of a customer
-            // printCart(&market, customerId);
+            printCart(&market, customerId);
             break;
         }
 
@@ -143,7 +104,7 @@ int main() {
             // Exit program
             printf("Exiting program...\n");
             getchar();
-            freeSuperMarket(&market);  // Free allocated memory
+            //freeSuperMarket(&market);  // Free allocated memory
             return 0;
 
         default:

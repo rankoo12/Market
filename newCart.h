@@ -20,7 +20,7 @@ typedef struct {
 void initializeCart(ShoppingCart* cart);
 void addItemToCart(ShoppingCart* cart, const ShoppingItem* newItem);
 void removeItemFromCart(ShoppingCart* cart, const char* productName);
-void printCart(const ShoppingCart* cart);
+//void printCart(const ShoppingCart* cart);
 void freeCart(ShoppingCart* cart);
 
 

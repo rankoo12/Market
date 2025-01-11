@@ -62,6 +62,7 @@ void removeItemFromCart(ShoppingCart* cart, const char* productName) {
     printf("Product '%s' not found in the cart\n", productName);
 }
 
+/*
 void printCart(const ShoppingCart* cart) {
     if (cart->size == 0) {
         printf("The shopping cart is empty.\n");
@@ -81,6 +82,7 @@ void printCart(const ShoppingCart* cart) {
         printf("----------------------------------------------------\n");
     }
 }
+*/
 
 void freeCart(ShoppingCart* cart) {
     free(cart->items);

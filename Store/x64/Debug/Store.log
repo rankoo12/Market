@@ -1,7 +1,7 @@
-﻿  main.c
-C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(67,34): warning C4013: 'findCustomerById' undefined; assuming extern returning int
-C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(88,32): warning C4013: 'findProductByName' undefined; assuming extern returning int
-C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(67,23): warning C4047: 'initializing': 'Costumer *' differs in levels of indirection from 'int'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(88,22): warning C4047: 'initializing': 'Product *' differs in levels of indirection from 'int'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(24,9): warning C4101: 'productTypeChoice': unreferenced local variable
-  Store.vcxproj -> C:\Users\יעל גילעד\Desktop\github\Store\Market\x64\Debug\Store.exe
+﻿  SuperMarket.c
+C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(105,53): warning C4047: 'function': 'const char *' differs in levels of indirection from 'char (*)[8]'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(105,53): warning C4024: 'findProductByBarcode': different types for formal and actual parameter 2
+C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(112,5): warning C4013: 'printCart' undefined; assuming extern returning int
+C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(163,6): error C2371: 'printCart': redefinition; different basic types
+  test.c
+  Generating Code...
