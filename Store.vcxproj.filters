@@ -33,6 +33,9 @@
     <ClCompile Include="Costumer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SuperMarket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
@@ -51,6 +54,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Costumer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperMarket.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

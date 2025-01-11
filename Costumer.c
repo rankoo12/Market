@@ -8,12 +8,20 @@
 void newCostumer(Costumer* costumer) {
     char buffer[256]; // Temporary buffer for user input
 
+    // Get customer ID from user
+    printf("Enter customer ID: ");
+    fgets(costumer->id, sizeof(costumer->id), stdin);
+    // Remove trailing newline character from ID if present
+    size_t len = strlen(costumer->id);
+    if (len > 0 && costumer->id[len - 1] == '\n') {
+        costumer->id[len - 1] = '\0';
+    }
+    getchar();
     // Get first name from user
-    printf("Enter private name: ");
+    printf("Enter first name: ");
     fgets(buffer, sizeof(buffer), stdin);
-
     // Remove trailing newline character if present
-    size_t len = strlen(buffer);
+    len = strlen(buffer);
     if (len > 0 && buffer[len - 1] == '\n') {
         buffer[len - 1] = '\0';
     }
@@ -60,10 +68,12 @@ void newCostumer(Costumer* costumer) {
     // Concatenate firstName and lastName into costumer->name using snprintf
     snprintf(costumer->name, totalLength, "%s %s", firstName, lastName);
 
-    // Print the full name
+    // Print the full name and ID
+    printf("Customer ID: '%s'\n", costumer->id);
     printf("Name: '%s'\n", costumer->name);
 
     // Free temporary dynamic allocations
     free(firstName);
     free(lastName);
 }
+

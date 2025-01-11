@@ -1,2 +1,7 @@
-﻿  Costumer.c
+﻿  main.c
+C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(67,34): warning C4013: 'findCustomerById' undefined; assuming extern returning int
+C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(88,32): warning C4013: 'findProductByName' undefined; assuming extern returning int
+C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(67,23): warning C4047: 'initializing': 'Costumer *' differs in levels of indirection from 'int'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(88,22): warning C4047: 'initializing': 'Product *' differs in levels of indirection from 'int'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\main.c(24,9): warning C4101: 'productTypeChoice': unreferenced local variable
   Store.vcxproj -> C:\Users\יעל גילעד\Desktop\github\Store\Market\x64\Debug\Store.exe

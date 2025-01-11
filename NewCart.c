@@ -88,3 +88,4 @@ void freeCart(ShoppingCart* cart) {
     cart->size = 0;
     cart->capacity = 0;
 }
+
