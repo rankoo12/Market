@@ -13,6 +13,7 @@ typedef struct {
 Costumer* initCostumer(Costumer* costumer);
 Costumer* getCostumerById(Costumer* customers, int numOfCustomers, const char* id);
 Costumer* newCostumer(char* id);
+Costumer setCostumer(Costumer customer, const char id[maxSizeId], char* customer_name, ShoppingCart* cart);
 void capitalizeWords(char* str);
 char* combineNames(char* firstName, char* lastName);
 #endif // COSTUMER_H

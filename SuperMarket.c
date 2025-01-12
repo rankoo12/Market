@@ -1,8 +1,10 @@
 #include <stdio.h>
-#include "SuperMarket.h"
-#include "Product.h"
 #include <ctype.h>
 #include <stdlib.h>
+#include "SuperMarket.h"
+#include "Product.h"
+#include "newCart.h"
+
 
 void initSuperMarket(SuperMarket* market)
 {
@@ -134,17 +136,30 @@ void addCostumerToSuperMarket(SuperMarket* market)
     fgets(id, maxSizeId, stdin);  // Corrected size
     getchar();
     Costumer *new_customer = getCostumerById(market->customers, market->totalCustomers, id);
-    if (new_customer == NULL)
-    {
-        printf("Could not find a customer with id : %s, creating new costumer with that id\n", id);
-        market->customers = increaseCustomersArraySize(market->customers, &market->totalCustomers);
-        new_customer = newCostumer(id);
-        //snprintf(market->customers[market->totalCustomers - 1].costumerName, nameLength, "%s", new_customer->costumerName);
-        //*market->customers[market->totalCustomers - 1].id = new_customer->id;
-        strcpy(market->customers[market->totalCustomers - 1].costumerName, new_customer->costumerName);
-        strcpy(market->customers[market->totalCustomers - 1].id, new_customer->id);
-        printf("");
-    }
+    
+    market->customers = increaseCustomersArraySize(market->customers, &market->totalCustomers);
+    new_customer = newCostumer(id);
+    strncpy(market->customers[market->totalCustomers - 1].id, new_customer->id, maxSizeId - 1);
+    market->customers[market->totalCustomers - 1].id[maxSizeId - 1] = '\0';
+    market->customers[market->totalCustomers - 1].costumerName = malloc(strlen(new_customer->costumerName) + 1);
+    strcpy(market->customers[market->totalCustomers - 1].costumerName, new_customer->costumerName);
+    new_customer->cart = malloc(sizeof(ShoppingCart));
+    initializeCart(new_customer->cart);
+    new_customer->cart->items = malloc(new_customer->cart->items_quantity * sizeof(ShoppingItem));
+    market->customers[market->totalCustomers - 1].cart = new_customer->cart;
+    //market->customers[market->totalCustomers - 1].cart->items = malloc(new_customer->cart->items_quantity * sizeof(ShoppingItem));
+
+    //market->customers = realloc(market->customers, (market->totalCustomers) * sizeof(Costumer));
+    //market->customers[market->totalCustomers - 1] = newCostumer;
+    strcpy(market->customers[market->totalCustomers - 1], new_customer);
+    strcpy(market->customers[market->totalCustomers - 1].id, *new_customer->id);
+    strcpy(market->customers[market->totalCustomers - 1].costumerName, *new_customer->costumerName);
+    strcpy(market->customers[market->totalCustomers - 1].cart, *new_customer->cart);
+
+    //setCostumer(market->customers[market->totalCustomers - 1], new_customer->id, new_customer->costumerName, new_customer->cart);
+    //strcpy(market->customers[market->totalCustomers - 1].costumerName, new_customer->costumerName);
+    strcpy(market->customers[market->totalCustomers - 1].id, new_customer->id);
+    printf("");
 }
 
 void addItemToCart(SuperMarket* market, ShoppingCart* cart, const char barcode[maxSizeBarCode])

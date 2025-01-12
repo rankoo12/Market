@@ -1,14 +1,13 @@
-﻿  SuperMarket.c
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(67,16): warning C4473: 'printf' : not enough arguments passed for format string
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(74,82): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(74,82): warning C4024: 'increaseProductsArraySize': different types for formal and actual parameter 2
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(84,16): warning C4013: 'strcspn' undefined; assuming extern returning int
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(85,13): warning C4013: 'strcmp' undefined; assuming extern returning int
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(95,20): warning C4047: '==': 'char [255]' differs in levels of indirection from 'int'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(144,9): warning C4013: 'strcpy' undefined; assuming extern returning int
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(157,27): warning C4047: '=': 'char' differs in levels of indirection from 'char *'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(162,16): warning C4473: 'printf' : not enough arguments passed for format string
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(176,16): warning C4473: 'printf' : not enough arguments passed for format string
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(178,17): warning C4473: 'scanf_s' : not enough arguments passed for format string
-C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(184,21): warning C4473: 'scanf_s' : not enough arguments passed for format string
+﻿  Costumer.c
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(16,19): warning C4047: '=': 'char' differs in levels of indirection from 'char [5]'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(24,23): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(52,12): warning C4047: 'function': 'char *' differs in levels of indirection from 'char'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(52,12): warning C4024: 'strcpy': different types for formal and actual parameter 1
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(53,12): warning C4047: 'function': 'char *' differs in levels of indirection from 'char'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(53,12): warning C4024: 'strcpy': different types for formal and actual parameter 1
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(54,20): warning C4133: 'function': incompatible types - from 'ShoppingCart *' to 'char *'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(54,27): warning C4133: 'function': incompatible types - from 'ShoppingCart *' to 'const char *'
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(55,10): warning C4090: 'function': different 'const' qualifiers
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(74,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(98,77): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Store.vcxproj -> C:\Users\יעל גילעד\Desktop\github\Store\Market\x64\Debug\Store.exe

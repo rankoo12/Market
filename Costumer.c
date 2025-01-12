@@ -11,7 +11,7 @@
 Costumer *initCostumer(Costumer* costumer)
 {
     // Initialize pointers to NULL
-    initializeCart(costumer->cart);
+    //initializeCart(costumer->cart);
     costumer->costumerName = "";
     *costumer->id = "NULL";
     return costumer;
@@ -47,6 +47,15 @@ Costumer* newCostumer(char *id)
     return new_costumer;
 }
 
+Costumer setCostumer(Costumer customer, const char id[maxSizeId], char *customer_name, ShoppingCart *cart)
+{
+    strcpy(*customer.costumerName, customer_name);
+    strcpy(*customer.id, id);
+    strcpy(customer.cart, cart);
+    free(id);
+    free(customer_name);
+    return customer;
+}
 
 Costumer* getCostumerById(Costumer* customers, int numOfCustomers, const char* id)
 {
@@ -55,7 +64,10 @@ Costumer* getCostumerById(Costumer* customers, int numOfCustomers, const char* i
 			return &customers[i]; // Return a pointer to the matching product
 		}
 	}
-	return NULL;
+    printf("Could not find a customer with id : %s, creating new costumer with that id\n", id);
+    Costumer* new_customer = malloc(sizeof(Costumer));
+    new_customer = initCostumer(new_customer);
+	return new_customer;
 }
 
 void capitalizeWords(char* str) {

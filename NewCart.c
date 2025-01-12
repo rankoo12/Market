@@ -10,9 +10,8 @@
 
 
 void initializeCart(ShoppingCart* cart) {
-	cart = malloc(sizeof(ShoppingCart));
-	cart->items = NULL;
-	cart->items_quantity = 0;
+	cart->items_quantity = 0;  // Set the items quantity to 0
+	cart->items = NULL;        // Make sure the items pointer is initially NULL
 }
 
 
