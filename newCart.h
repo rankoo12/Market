@@ -4,24 +4,20 @@
 #include "Product.h"
 
 
-
 typedef struct {
-	Product product; // Embed Product struct
-	int quantity;    // Quantity of this product in the shopping item
+	char barcode[maxSizeBarCode];
+	float price;
+	int quantity;
 } ShoppingItem;
 
 typedef struct {
 	ShoppingItem* items;
-	int size;
-	int capacity;
+	int items_quantity;
 } ShoppingCart;
 
 
 void initializeCart(ShoppingCart* cart);
-void addItemToCart(ShoppingCart* cart, const ShoppingItem* newItem);
-void removeItemFromCart(ShoppingCart* cart, const char* productName);
-void printCart(const ShoppingCart* cart);
-void freeCart(ShoppingCart* cart);
+int totalPriceOfCart(ShoppingCart* cart);
 
 
 

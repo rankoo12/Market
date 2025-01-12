@@ -4,8 +4,9 @@
 
 
 //constant declerations - input rules
-#define maxSizeProductName 20
-#define maxSizeBarCode 8
+#define maxSizeProductName 21
+#define maxSizeBarCode 9
+#define maxSizeId 10
 
 //constant declerations - type of product
 #define shelf "SH"
