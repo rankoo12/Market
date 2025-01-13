@@ -30,6 +30,12 @@
     <ClCompile Include="NewCart.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Costumer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperMarket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
@@ -46,6 +52,12 @@
     </ClInclude>
     <ClInclude Include="constants.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Costumer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperMarket.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -18,6 +18,7 @@ typedef struct {
 
 void initializeCart(ShoppingCart* cart);
 int totalPriceOfCart(ShoppingCart* cart);
+void printCart(const ShoppingCart* cart);
 
 
 

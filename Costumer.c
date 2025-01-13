@@ -61,10 +61,9 @@ Costumer* getCostumerById(Costumer* customers, int numOfCustomers, const char* i
 {
 	for (int i = 0; i < numOfCustomers; i++) {
 		if (strcmp(customers[i].id, id) == 0) {
-			return &customers[i]; // Return a pointer to the matching product
+			return &customers[i]; // Return a pointer to the matching costumer
 		}
 	}
-    printf("Could not find a customer with id : %s, creating new costumer with that id\n", id);
     Costumer* new_customer = malloc(sizeof(Costumer));
     new_customer = initCostumer(new_customer);
 	return new_customer;

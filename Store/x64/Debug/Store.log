@@ -1,13 +1,4 @@
-﻿  Costumer.c
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(16,19): warning C4047: '=': 'char' differs in levels of indirection from 'char [5]'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(24,23): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(52,12): warning C4047: 'function': 'char *' differs in levels of indirection from 'char'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(52,12): warning C4024: 'strcpy': different types for formal and actual parameter 1
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(53,12): warning C4047: 'function': 'char *' differs in levels of indirection from 'char'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(53,12): warning C4024: 'strcpy': different types for formal and actual parameter 1
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(54,20): warning C4133: 'function': incompatible types - from 'ShoppingCart *' to 'char *'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(54,27): warning C4133: 'function': incompatible types - from 'ShoppingCart *' to 'const char *'
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(55,10): warning C4090: 'function': different 'const' qualifiers
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(74,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\יעל גילעד\Desktop\github\Store\Market\Costumer.c(98,77): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  SuperMarket.c
+C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(63,10): warning C4013: 'checkCostumerExists' undefined; assuming extern returning int
+C:\Users\יעל גילעד\Desktop\github\Store\Market\SuperMarket.c(183,10): warning C4101: 'barcode': unreferenced local variable
   Store.vcxproj -> C:\Users\יעל גילעד\Desktop\github\Store\Market\x64\Debug\Store.exe

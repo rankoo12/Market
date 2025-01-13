@@ -2,6 +2,7 @@
 #define SUPERMARKET_H
 #include "Costumer.h"
 #include "Product.h"
+#include "newCart.h"
 
 typedef struct {
     char* shopName;
@@ -13,12 +14,14 @@ typedef struct {
 
 void initSuperMarket(SuperMarket* market);
 void printSuperMarketData(SuperMarket* market);
-Costumer* increaseCustomersArraySize(Costumer* customers, int* totalCustomers);
-Product* increaseProductsArraySize(Product* products, int* totalProducts);
 void addProductToSuperMarket(SuperMarket* market, const char* barcode);
-Product* getProductByBarCodeInMarket(SuperMarket* market, const char* barcode);
-Product* removeProductFromMarket(SuperMarket* market, Product* product_to_remove);
 void addCostumerToSuperMarket(SuperMarket* market);
-void addItemToCart(SuperMarket* market, ShoppingCart* cart, const char barcode[maxSizeBarCode]);
-#endif // SUPERMARKET_H
+void addItemToCart(SuperMarket* market, ShoppingCart* cart, const char barcode[maxSizeBarCode], int quantity);
+void startPurchase(SuperMarket* market);
+void manageCart(SuperMarket* market);
+void printProductsByCategory(SuperMarket* market);
+void exitProgram(SuperMarket* market);
+void printCustomerCart(SuperMarket* market);
+Costumer* increaseCustomersArraySize(Costumer* customers, int* totalCustomers);
 
+#endif // SUPERMARKET_H
